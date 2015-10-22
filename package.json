@@ -1,5 +1,5 @@
 {
-  "name": "node-express-demo",
+  "name": "node-express-base",
   "version": "0.0.1",
   "private": true,
   "scripts": {
