@@ -1,0 +1,149 @@
+body {
+    margin              : 0;
+    padding             : 0;
+    font-family         : "Helvetica Neue", "Lantinghei SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    -webkit-user-select : none;
+    -moz-user-select    : none;
+    -ms-user-select     : none;
+    user-select         : none;
+}
+
+.clearfix:after {
+    visibility : hidden;
+    display    : block;
+    font-size  : 0;
+    content    : " ";
+    clear      : both;
+    height     : 0;
+}
+
+.cHeader {
+    height        : 50px;
+    margin-bottom : 35px;
+    text-align    : left;
+    background    : #1f1f1f;
+}
+
+.cHeader .cLogo {
+    margin-left : calc(5% - 25px);
+}
+
+.cHeader .cLogo img {
+    height : 14px;
+    margin : 18px 0;
+}
+
+.cHeader .langLink {
+    float           : right;
+    margin-right    : 5%;
+    color           : #fff;
+    line-height     : 50px;
+    text-decoration : none;
+}
+
+.cMenu {
+    float      : left;
+    width      : 150px;
+    text-align : right;
+}
+
+.cMenu ul {
+    list-style : none;
+    margin-top : -4px;
+}
+
+.cMenu a {
+    color              : #016493;
+    font-size          : 1em;
+    line-height        : 1.5em;
+    text-decoration    : none;
+    -webkit-transition : all .3s; -moz-transition : all .3s; -ms-transition : all .3s; -o-transition : all .3s; transition : all .3s;
+}
+
+.cMenu a:hover {
+    padding-right : 10px;
+}
+
+.cMenu a.current {
+    color : #1f1f1f;
+}
+
+.cMenu a.current:hover {
+    padding-right : 0px;
+}
+
+#all {
+    width  : 90%;
+    margin : 0 auto;
+}
+
+.cWrapper {
+    margin-left : 200px;
+}
+
+p {
+    margin : 0;
+}
+
+.cMenu .mail {
+    position    : relative;
+    display     : block;
+    float       : right;
+    width       : 85px;
+    margin      : 10px 0 0 0;
+    padding     : 6px 0;
+    color       : #fff;
+    font-size   : 12px;
+    line-height : 1;
+    background  : #006493;
+}
+
+.cMenu .mail .triangle {
+    top          : 8px;
+    left         : 0;
+    position     : absolute;
+    width        : 0;
+    height       : 0;
+    display      : inline-block;
+    border-style : solid;
+    border-width : 4px 6.9px 4px 0;
+    border-color : transparent #fff transparent transparent;
+}
+
+.cMenu .mail:hover {
+    text-align: center;
+}
+
+.cMenu .mail:hover .triangle {
+    opacity: 0;
+}
+
+.cMenu .mail:before {
+    top          : 0;
+    left         : -20px;
+    position     : absolute;
+    width        : 0;
+    height       : 0;
+    content      : '';
+    border-style : solid;
+    border-width : 0 0 24px 20px;
+    border-color : transparent transparent #006493 transparent;
+}
+
+.cMenu .mail:after {
+    top          : 0;
+    right        : -20px;
+    position     : absolute;
+    width        : 0;
+    height       : 0;
+    content      : '';
+    border-style : solid;
+    border-width : 24px 20px 0 0;
+    border-color : #006493 transparent transparent transparent;
+}
+
+@media (min-width : 1441px) {
+    #all {
+        width : 1440px;
+    }
+}
